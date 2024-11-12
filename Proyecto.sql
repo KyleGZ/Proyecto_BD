@@ -30,3 +30,30 @@ CREATE TABLE Proveedores(
   Correo varchar(50),
   PRIMARY KEY(ID_Proveedor)
 );
+
+CREATE TABLE Movimientos_Inventario(
+  ID_Movimiento int,
+  ID_Producto int,
+  Tipo_movimiento varchar(50),
+  Cantidad int,
+  Fecha date,
+  Descripcion varchar(50),
+  Responsable varcah(50), 
+  PRIMARY KEY(ID_Movimiento)
+);
+
+CREATE TABLE Solicitud_Materiales(
+  ID_Solicitud int,
+  ID_Usuario int,
+  Fecha_Solicitud date,
+  Estado varchar(50),
+  Descripcion varchar(50),
+  PRIMARY KEY(ID_Solicitud)
+);
+
+
+
+
+
+
+
