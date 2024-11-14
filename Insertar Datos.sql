@@ -117,32 +117,33 @@ INSERT INTO Solicitudes_Materiales (ID_Solicitud, ID_Usuario, Fecha_Solicitud, E
 select * from Solicitudes_Materiales;
 
 --Detalle_Solicitud
-INSERT INTO Detalle_Solicitud (ID_Detalle, ID_Solicitud, ID_Producto, Cantidad, Unidad_Medida) VALUES 
-(1, 1, 101, 2, 'Ud'),
-(2, 1, 102, 3, 'Lt'),
-(3, 2, 103, 4, 'Ud'),
-(4, 2, 104, 10, 'Ud'),
-(5, 3, 105, 8, 'Lt'),
-(6, 3, 106, 12, 'Ud'),
-(7, 4, 107, 1, 'Kg'),
-(8, 4, 108, 15, 'Ud'),
-(9, 5, 109, 20, 'Ud'),
-(10, 5, 110, 6, 'Ud'),
-(11, 6, 111, 4, 'Lt'),
-(12, 6, 112, 5, 'Ud'),
-(13, 7, 113, 9, 'Ud'),
-(14, 7, 114, 8, 'Kg'),
-(15, 8, 115, 2, 'Lt'),
-(16, 8, 116, 11, 'Ud'),
-(17, 9, 117, 14, 'Ud'),
-(18, 9, 118, 7, 'Lt'),
-(19, 10, 119, 3, 'Ud'),
-(20, 10, 120, 16, 'Ud'),
-(21, 11, 121, 10, 'Lt'),
-(22, 11, 122, 18, 'Ud'),
-(23, 12, 123, 13, 'Ud'),
-(24, 12, 124, 9, 'Kg'),
-(25, 13, 125, 5, 'Lt');
+INSERT INTO Detalle_Solicitud (ID_Detalle, ID_Solicitud, ID_Producto, Cantidad) VALUES
+(1, 1, 101, 2),
+(2, 1, 102, 3),
+(3, 2, 103, 4),
+(4, 2, 104, 10),
+(5, 3, 105, 8),
+(6, 3, 106, 12),
+(7, 4, 107, 1),
+(8, 4, 108, 15),
+(9, 5, 109, 20),
+(10, 5, 110, 6),
+(11, 6, 111, 4),
+(12, 6, 112, 5),
+(13, 7, 113, 9),
+(14, 7, 114, 8),
+(15, 8, 115, 2),
+(16, 8, 116, 11),
+(17, 9, 117, 14),
+(18, 9, 118, 7),
+(19, 10, 119, 3),
+(20, 10, 120, 16),
+(21, 11, 121, 10),
+(22, 11, 122, 18),
+(23, 12, 123, 13),
+(24, 12, 124, 9),
+(25, 13, 125, 5);
+
 
 --Muestra los datos de los detalles de las solicitudes
 select * from Detalle_Solicitud;
