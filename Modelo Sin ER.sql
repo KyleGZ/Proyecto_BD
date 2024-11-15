@@ -176,9 +176,7 @@ Drop table Detalle_orden;
 CREATE TABLE Ubicacion_Producto(
   ID_Ubicacion int,
   ID_Producto int,
-  Estante int,
-  Pasillo int,
-  Seccion int,
+  ID_Almacen int,
   PRIMARY KEY(ID_Ubicacion)
 );
 
@@ -209,6 +207,125 @@ CREATE TABLE Roles_Usuario(
 --Se elimina la tabla Roles_Usuario
 Drop table Roles_Usuario;
 
+-- Se crea la tabla Historial_Precios_Productos
+CREATE TABLE Historial_Precios_Productos (
+    ID_Historia int,
+    ID_Producto int,
+    Precio_Anterior double,
+    Nuevo_Precio double,
+    Fecha_Cambio date,
+    Motivo_Cambio varchar(50),
+    PRIMARY KEY (ID_Historial)
+);
+
+--Se elimina la tabla Historial_Precios_Productos 
+Drop table Historial_Precios_Productos ;
+
+-- Se crea la tabla Pedidos_Proveedores
+CREATE TABLE Pedidos_Proveedores (
+    ID_Pedido int,
+    ID_Proveedor int,
+    Fecha_Pedido date,
+    Estado_Pedido varchar(50),
+    PRIMARY KEY (ID_Pedido)
+);
+
+--Se elimina la tabla Pedidos_Proveedores
+Drop table Pedidos_Proveedores;
+
+-- Se crea la tabla Detalle_Pedido
+CREATE TABLE Detalle_Pedido (
+    ID_Detalle_Pedido int,
+    ID_Pedido int,
+    ID_Producto int,
+    Cantidad int,
+    Precio_Unitario double,
+    Subtotal double,
+    PRIMARY KEY (ID_Detalle_Pedido)
+);
+
+--Se elimina la tabla Detalle_Pedido
+Drop table Detalle_Pedido;
+
+-- Se crea la tabla Lotes_Producto
+CREATE TABLE Lotes_Producto (
+    ID_Lote int,
+    ID_Producto int,
+    Fecha_Recepcion date,
+    Fecha_Vencimiento date,
+    Cantidad_Inicial int,
+    Cantidad_Disponible int,
+    PRIMARY KEY (ID_Lote)
+);
+
+--Se elimina la tabla Lotes_Producto
+Drop table Lotes_Producto;
+
+-- Tabla Aprobaciones_Solicitudes
+CREATE TABLE Aprobaciones_Solicitudes (
+    ID_Aprobacion int,
+    ID_Solicitud int,
+    ID_Coordinador int,
+    Fecha_Aprobacion date,
+    Estado_Aprobacion varchar(50),
+    PRIMARY KEY (ID_Aprobacion)
+);
+
+--Se elimina la tabla Aprobaciones_Solicitudes
+Drop table Aprobaciones_Solicitudes;
+
+-- Se crea la tabla Entradas_Manual
+CREATE TABLE Entradas_Manual (
+    ID_Entrada int,
+    ID_Producto int,
+    Fecha_Entrada date,
+    Cantidad_Entrada int,
+    Descripcion varchar(255),
+    Responsable varchar(255),
+    PRIMARY KEY (ID_Entrada)
+);
+
+--Se elimina la tabla Entradas_Manual
+Drop table Entradas_Manual;;
+
+-- Se crea la tabla Reajustes_Inventario
+CREATE TABLE Reajustes_Inventario (
+    ID_Reajuste int,
+    ID_Toma_Fisica int,
+    ID_Producto int,
+    Cantidad_Reajustada int,
+    Motivo_Reajuste varchar(255),
+    Fecha_Reajuste date,
+    PRIMARY KEY (ID_Reajuste)
+);
+
+--Se elimina la tabla Reajustes_Inventario
+Drop table Reajustes_Inventario;
+
+-- Se crea la tabla Categorias_Almacen
+CREATE TABLE Categorias_Almacen (
+    ID_Categoria_Almacen int,
+    Nombre_Categoria_Almacen varchar(100),
+    Descripcion varchar(255),
+    PRIMARY KEY (ID_Categoria_Almacen)
+);
+
+--Se elimina la tabla Categorias_Almacen
+Drop table Categorias_Almacen;
+
+
+-- Se crea la tabla Documentos_Proveedor
+CREATE TABLE Documentos_Proveedor (
+    ID_Documento int,
+    ID_Proveedor int,
+    Tipo_Documento varchar(100),
+    Fecha_Subida date,
+    Descripcion varchar(255),
+    PRIMARY KEY (ID_Documento)
+);
+
+--Se elimina la tabla Documentos_Proveedor
+Drop table Documentos_Proveedor;
 
 
 
