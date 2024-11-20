@@ -148,6 +148,152 @@ INSERT INTO Detalle_Solicitud (ID_Detalle, ID_Solicitud, ID_Producto, Cantidad) 
 --Muestra los datos de los detalles de las solicitudes
 select * from Detalle_Solicitud;
 
+--Ajustes_Toma
+INSERT INTO Ajustes_Toma (ID_Ajuste, ID_Toma, ID_Producto, Cantidad_Existente, Cantidad_Contada, Diferencia, Fecha) VALUES
+(1, 424, 62872, 1, 51, 50, '2024-11-05'),
+(2, 430, 527872, 0, 10, 10, '2024-11-05'),
+(3, 434, 838281, 0, 20, 20, '2024-11-05'),
+(4, 434, 9940, 0, 100, 100, '2024-11-05'),
+(5, 434, 8940, 90, 290, 200, '2024-11-05'),
+(6, 434, 2966, 5, 15, 10, '2024-11-05'),
+(7, 437, 4917, 0, 60, 60, '2024-11-05'),
+(8, 437, 41872, 2, 12, 10, '2024-11-05'),
+(9, 434, 91940, 90, 190, 100, '2024-11-05'),
+(10, 434, 41698, 35, 75, 40, '2024-11-05'),
+(11, 438, 1941, 9, 29, 20, '2024-11-05'),
+(12, 437, 60872, 0, 420, 420, '2024-11-05'),
+(13, 434, 4966, 4, 14, 10, '2024-11-05'),
+(14, 434, 7940, 0, 200, 200, '2024-11-05'),
+(15, 430, 527872, 0, 10, 10, '2024-11-05'),
+(16, 434, 2966, 5, 15, 10, '2024-11-05'),
+(17, 437, 4917, 0, 60, 60, '2024-11-05'),
+(18, 434, 41698, 35, 75, 40, '2024-11-05'),
+(19, 438, 21008, 1, 5, 4, '2024-11-05'),
+(20, 434, 7940, 0, 200, 200, '2024-11-05'),
+(21, 437, 60872, 0, 420, 420, '2024-11-05'),
+(22, 437, 41872, 2, 12, 10, '2024-11-05'),
+(23, 438, 1186275, 5, 35, 30, '2024-11-05'),
+(24, 430, 527872, 0, 10, 10, '2024-11-05'),
+(25, 424, 62872, 1, 51, 50, '2024-11-05');
+
+--Muestra los datos de ajustes_toma
+select * from Ajustes_Toma;
+
+--Categorias_Producto
+INSERT INTO Categorias_Producto (ID_Categoria, Nombre_Categoria) VALUES
+(1, 'mantenimiento'),
+(2, 'limpieza'),
+(3, 'ferreteria');
+
+--Muestra los datos de las categorías de los productos
+select * from Categorias_Producto;
+
+--Unidad_Medida 
+--CAMBIAR
+INSERT INTO Unidad_Medida (ID_Unidad, Nombre, Abreviatura) VALUES
+(1, 'DESINFECTANTE EN AEROSOL', 'DA354GR'),
+(2, 'ABRILLANTADOR SUPERFICIES', 'AS240ML'),
+(3, 'ACOPLE PARA MANGUERA', 'APM12'),
+(4, 'ADAPTADOR HEMBRA 25MM', 'AH25MM'),
+(5, 'ADAPTADOR HEMBRA 38MM', 'AH38MM'),
+(6, 'ADAPTADOR HEMBRA 50MM', 'AH50MM'),
+(7, 'ADAPTADOR MACHO ALTA DENSIDAD', 'AMHD'),
+(8, 'ALCOHOL EN GEL', 'AG1000ML'),
+(9, 'ALCOHOL MULTIUSO', 'AM80PCT'),
+(10, 'BALDE PLASTICO', 'BP10L'),
+(11, 'BOLIGRAFO AZUL', 'BAZP'),
+(12, 'CARPETA COLGANTE', 'CCOF'),
+(13, 'CUADERNO 100 HOJAS', 'C100H'),
+(14, 'DESINFECTANTE SPRAY', 'DS400ML'),
+(15, 'ESCOBA FIBRA NYLON', 'EFNY'),
+(16, 'FIBRA LIMPIEZA AZUL', 'FLA'),
+(17, 'GUANTE DE HULE', 'GHN9'),
+(18, 'JABON ABRASIVO POLVO', 'JAP250GR'),
+(19, 'LIQUIDO DESINFECTANTE CLORO', 'LDC'),
+(20, 'PAÑO MICROFIBRA AMARILLO', 'PMA'),
+(21, 'PEGAMENTO CONTACTO', 'PC4OZ'),
+(22, 'REGLA PLASTICA', 'RP30CM'),
+(23, 'ROTULADOR PIZARRA AZUL', 'RPA'),
+(24, 'SACAGRAPAS METALICO', 'SM6CM'),
+(25, 'TOMA CORRIENTE DOBLE', 'TCDP');
+
+--Muestra los datos de las unidades de medida
+select * from Unidad_Medida;
+
+--Responsables
+INSERT INTO Responsables (ID_Responsable, Nombre, Cargo, Contacto) VALUES
+(1, 'Risvan  Eduardo Vargas Esquivel', 'Jefe de Inventario', 'risvan.vargas@empresa.com'),
+(2, 'Carlos Martínez', 'Supervisor de Almacén', 'carlos.martinez@empresa.com'),
+(3, 'María Pérez', 'Encargada de Compras', 'maria.perez@empresa.com'),
+(4, 'Javier Gómez', 'Asistente de Inventario', 'javier.gomez@empresa.com'),
+(5, 'Laura Sánchez', 'Coordinadora de Logística', 'laura.sanchez@empresa.com'),
+(6, 'Maureen Manley Baeza', 'Analista de Datos', 'maureen.baeza@empresa.com'),
+(7, 'Carmen Ruiz', 'Jefa de Proveeduría', 'carmen.ruiz@empresa.com');
+
+--Muestra los datos de los responsables de los almacenes
+select * from Responsables_Almacen;
+
+--Ordenes
+INSERT INTO Ordenes (ID_Orden, ID_Proveedor, Fecha_Orden, Estado) VALUES
+(1, 1001, '2024-01-30', 'Entregada'),
+(2, 1002, '2024-01-31', 'Entregada'),
+(3, 1003, '2024-02-09', 'Entregada'),
+(4, 1004, '2024-04-09', 'Entregada'),
+(5, 1005, '2024-06-25', 'Entregada'),
+(6, 1006, '2024-07-04', 'Entregada'),
+(7, 1007, '2024-10-30', 'Aprobada Alisto'),
+(8, 1008, '2024-03-07', 'Entregada'),
+(9, 1009, '2024-05-31', 'Entregada'),
+(10, 1010, '2024-07-05', 'Entregada'),
+(11, 1011, '2024-11-01', 'Entregada'),
+(12, 1012, '2024-02-08', 'Entregada'),
+(13, 1013, '2024-05-30', 'Entregada'),
+(14, 1014, '2024-07-10', 'Entregada'),
+(15, 1015, '2024-06-05', 'Entregada'),
+(16, 1016, '2024-03-08', 'Entregada'),
+(17, 1017, '2024-01-31', 'Entregada'),
+(18, 1018, '2024-11-04', 'Entregada'),
+(19, 1019, '2024-04-04', 'Entregada'),
+(20, 1020, '2024-02-10', 'Entregada'),
+(21, 1021, '2024-06-30', 'Entregada'),
+(22, 1022, '2024-05-04', 'Entregada'),
+(23, 1023, '2024-10-30', 'Aprobada Alisto'),
+(24, 1024, '2024-01-31', 'Entregada'),
+(25, 1025, '2024-07-01', 'Entregada');
+
+--Muestra los datos de la orden de compra
+select * from Orden_Compra;
+
+--Detalle_Orden
+INSERT INTO Detalle_Orden (ID_Detalle_Orden, ID_Orden, ID_Producto, Cantidad, Precio_Unitario) VALUES
+(1, 1001, 1054, 20, 225.66),
+(2, 1002, 1054, 100, 163.72),
+(3, 1003, 1054, 200, 407.08),
+(4, 1004, 1054, 20, 995.00),
+(5, 1005, 1054, 70, 265.49),
+(6, 1006, 1054, 178, 375.00),
+(7, 1007, 1054, 10, 761.17),
+(8, 1008, 1054, 40, 825.20),
+(9, 1009, 1054, 50, 243.36),
+(10, 1010, 1054, 12, 475.99),
+(11, 1011, 1054, 100, 341.88),
+(12, 1012, 1054, 200, 530.97),
+(13, 1013, 1054, 30, 752.21),
+(14, 1014, 1054, 60, 611.00),
+(15, 1015, 1054, 48, 1434.55),
+(16, 1016, 1054, 420, 375.00),
+(17, 1017, 1054, 240, 65.80),
+(18, 1018, 1054, 60, 927.79),
+(19, 1019, 1054, 36, 678.25),
+(20, 1020, 1054, 25, 825.20),
+(21, 1021, 1054, 100, 341.88),
+(22, 1022, 1054, 24, 50.94),
+(23, 1023, 1054, 10, 495.58),
+(24, 1024, 1054, 48, 6.791.40),
+(25, 1025, 1054, 90, 563.93);
+
+--Muestra los datos del detalle de la orden de compra
+select * from Detalle_Orden;
 
 
 
