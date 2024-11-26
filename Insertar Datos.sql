@@ -88,31 +88,31 @@ select * from Movimientos_Inventario;
 --Solicitudes_Materiales
 
 INSERT INTO Solicitudes_Materiales (ID_Solicitud, ID_Usuario, Fecha_Solicitud, Estado, Descripción) VALUES 
-(1, 1001, '2024-11-05', 'Aprobado', 'Limpieza y aseo oficinas y s. sanitarios áreas recreativas Sede del Pacífico'),
-(2, 1002, '2024-11-05', 'Aprobado', 'Solicitud de materiales de limpieza para mantenimiento'),
-(3, 1003, '2024-11-04', 'Aprobado', 'Requisición de artículos de papelería'),
-(4, 1004, '2024-10-28', 'Aprobado', 'Materiales para eventos recreativos estudiantiles'),
-(5, 1005, '2024-10-29', 'Aprobado', 'Requerimientos para oficina Editorial y audiovisual'),
-(6, 1006, '2024-11-03', 'Pendiente', 'Artículos para la Unidad de Trabajo Social y Programa Residencias'),
-(7, 1007, '2024-11-02', 'Aprobado', 'Materiales para uso en oficina de salud'),
-(8, 1008, '2024-10-27', 'Rechazado', 'Solicitudes para biblioteca y área de investigación'),
-(9, 1009, '2024-10-25', 'Aprobado', 'Reabastecimiento de productos de limpieza y aseo'),
-(10, 1010, '2024-10-26', 'Aprobado', 'Solicitudes de materiales biodegradables'),
-(11, 1011, '2024-11-01', 'Pendiente', 'Productos para el mantenimiento de áreas comunes'),
-(12, 1012, '2024-10-30', 'Aprobado', 'Solicitudes para áreas de alto tráfico'),
-(13, 1013, '2024-10-29', 'Aprobado', 'Material para actividades de promoción estudiantil'),
-(14, 1014, '2024-11-04', 'Aprobado', 'Suministro de productos de limpieza y desinfección'),
-(15, 1015, '2024-10-31', 'Rechazado', 'Requerimiento de material biodegradable'),
-(16, 1016, '2024-11-01', 'Aprobado', 'Solicitud de papelería adicional'),
-(17, 1017, '2024-11-03', 'Aprobado', 'Productos específicos para desinfección'),
-(18, 1018, '2024-10-28', 'Pendiente', 'Solicitud para reposición de equipos pequeños'),
-(19, 1019, '2024-10-30', 'Aprobado', 'Requerimientos para oficinas administrativas'),
-(20, 1020, '2024-10-25', 'Aprobado', 'Productos para eventos institucionales'),
-(21, 1021, '2024-10-31', 'Rechazado', 'Suministros para áreas de descanso y recreación'),
-(22, 1022, '2024-10-29', 'Aprobado', 'Requerimiento de material para soporte técnico'),
-(23, 1023, '2024-11-02', 'Aprobado', 'Materiales para mantenimiento preventivo'),
-(24, 1024, '2024-11-05', 'Pendiente', 'Suministro de artículos de seguridad e higiene'),
-(25, 1025, '2024-11-04', 'Aprobado', 'Productos para uso diario de la comunidad universitaria');
+(1, 1, '2024-11-05', 'Aprobado', 'Limpieza y aseo oficinas y s. sanitarios áreas recreativas'),
+(2, 2, '2024-11-05', 'Aprobado', 'Solicitud de materiales de limpieza para mantenimiento'),
+(3, 3, '2024-11-04', 'Aprobado', 'Requisición de artículos de papelería'),
+(4, 4, '2024-10-28', 'Aprobado', 'Materiales para eventos recreativos estudiantiles'),
+(5, 5, '2024-10-29', 'Aprobado', 'Requerimientos para oficina Editorial y audiovisual'),
+(6, 6, '2024-11-03', 'Pendiente', 'Artículos para la Unidad de Trabajo Social y Programa Residencias'),
+(7, 7, '2024-11-02', 'Aprobado', 'Materiales para uso en oficina de salud'),
+(8, 8, '2024-10-27', 'Rechazado', 'Solicitudes para biblioteca y área de investigación'),
+(9, 9, '2024-10-25', 'Aprobado', 'Reabastecimiento de productos de limpieza y aseo'),
+(10, 10, '2024-10-26', 'Aprobado', 'Solicitudes de materiales biodegradables'),
+(11, 1, '2024-11-01', 'Pendiente', 'Productos para el mantenimiento de áreas comunes'),
+(12, 2, '2024-10-30', 'Aprobado', 'Solicitudes para áreas de alto tráfico'),
+(13, 3, '2024-10-29', 'Aprobado', 'Material para actividades de promoción estudiantil'),
+(14, 4, '2024-11-04', 'Aprobado', 'Suministro de productos de limpieza y desinfección'),
+(15, 5, '2024-10-31', 'Rechazado', 'Requerimiento de material biodegradable'),
+(16, 6, '2024-11-01', 'Aprobado', 'Solicitud de papelería adicional'),
+(17, 7, '2024-11-03', 'Aprobado', 'Productos específicos para desinfección'),
+(18, 8, '2024-10-28', 'Pendiente', 'Solicitud para reposición de equipos pequeños'),
+(19, 9, '2024-10-30', 'Aprobado', 'Requerimientos para oficinas administrativas'),
+(20, 10, '2024-10-25', 'Aprobado', 'Productos para eventos institucionales'),
+(21, 1, '2024-10-31', 'Rechazado', 'Suministros para áreas de descanso y recreación'),
+(22, 2, '2024-10-29', 'Aprobado', 'Requerimiento de material para soporte técnico'),
+(23, 3, '2024-11-02', 'Aprobado', 'Materiales para mantenimiento preventivo'),
+(24, 4, '2024-11-05', 'Pendiente', 'Suministro de artículos de seguridad e higiene'),
+(25, 5, '2024-11-04', 'Aprobado', 'Productos para uso diario de la comunidad universitaria');
 
 ---Muestra los datos de las solicitudes de los materiales
 select * from Solicitudes_Materiales;
@@ -327,6 +327,21 @@ INSERT INTO Usuarios (ID_Usuario, Nombre, ID_Rol, Correo, Contraseña) VALUES
 --Muestra los datos de los usuarios
 select * from Usuarios;
 
+--Roles_Usuarios
+INSERT INTO Roles_Usuarios (ID_Rol, Nombre_Rol, Permisos) VALUES
+(1, 'Administrador', 'Acceso total'),
+(2, 'Supervisor', 'Acceso limitado'),
+(3, 'Usuario', 'Acceso limitado'),
+(4, 'Operador', 'Acceso limitado'),
+(5, 'Analista', 'Acceso limitado'),
+(6, 'Auditor', 'Acceso limitado'),
+(7, 'Soporte Técnico', 'Acceso limitado'),
+(8, 'Gerente', 'Acceso limitado'),
+(9, 'Consultor', 'Acceso limitado'),
+(10, 'Desarrollador', 'Acceso limitado');
+
+--Muestra los datos de los roles de los usuarios
+select * from Roles_Usuarios;
 
 
 
