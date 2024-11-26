@@ -311,6 +311,21 @@ INSERT INTO  Ubicaciones_Producto (ID_Ubicacion, ID_Producto, ID_Almacen) VALUES
 --Muestra los datos de la ubicación del producto
 select * from Ubicaciones_Producto;
 
+--Usuarios
+INSERT INTO Usuarios (ID_Usuario, Nombre, ID_Rol, Correo, Contraseña) VALUES
+(1, 'Juan Pérez', 1, 'juan.perez@example.com', 'Contraseña123'),
+(2, 'María Gómez', 2, 'maria.gomez@example.com', 'Segura456'),
+(3, 'Luis Fernández', 1, 'luis.fernandez@example.com', 'Clave789'),
+(4, 'Ana López', 3, 'ana.lopez@example.com', 'Pass2023'),
+(5, 'Carlos Ruiz', 2, 'carlos.ruiz@example.com', 'Secretos321'),
+(6, 'Elena Ramírez', 1, 'elena.ramirez@example.com', 'ClaveSegura'),
+(7, 'Jorge Martínez', 3, 'jorge.martinez@example.com', 'Pass1234'),
+(8, 'Lucía Torres', 2, 'lucia.torres@example.com', 'Clave4567'),
+(9, 'Sofía Herrera', 1, 'sofia.herrera@example.com', 'ClaveUnica'),
+(10, 'Andrés Castro', 3, 'andres.castro@example.com', 'Password6789');
+
+--Muestra los datos de los usuarios
+select * from Usuarios;
 
 
 
