@@ -53,32 +53,33 @@ select * from Proveedores;
 
 --Movimientos_Inventario
 
-INSERT INTO Movimientos_Inventario (ID_Movimiento, ID_Producto, Tipo_Movimiento, Cantidad, Fecha, Descripción, Responsable) VALUES 
-(1, 101, 'Entrada', 50, '2024-07-04', 'Ingreso de producto para reaprovisionamiento', 'Risvan Eduardo Vargas Esquivel'),
-(2, 102, 'Salida', 30, '2024-07-05', 'Entrega para solicitud 2024-2110', 'Maureen Manley Baeza'),
-(3, 103, 'Ajuste', -5, '2024-07-06', 'Ajuste por rotura', 'Jorge Campos Pérez'),
-(4, 104, 'Entrada', 100, '2024-07-07', 'Ingreso por nueva compra', 'Ana María González'),
-(5, 105, 'Salida', 20, '2024-07-08', 'Pedido interno', 'Carlos Jiménez Rodríguez'),
-(6, 106, 'Ajuste', -10, '2024-07-09', 'Ajuste por inventario físico', 'Laura Castillo Solano'),
-(7, 107, 'Entrada', 25, '2024-07-10', 'Reaprovisionamiento', 'José Antonio Salazar'),
-(8, 108, 'Salida', 15, '2024-07-11', 'Solicitud de materiales administrativos', 'María Fernanda Rojas'),
-(9, 109, 'Ajuste', -3, '2024-07-12', 'Producto defectuoso', 'Luis Fernando Rodríguez'),
-(10, 110, 'Entrada', 45, '2024-07-13', 'Ingreso de material para mantenimiento', 'Patricia Arias Castro'),
-(11, 111, 'Salida', 60, '2024-07-14', 'Solicitud aprobada de materiales', 'Andrés Villalobos Mora'),
-(12, 112, 'Ajuste', 8, '2024-07-15', 'Ajuste por ingreso extra', 'Rosa Elena Vargas'),
-(13, 113, 'Entrada', 75, '2024-07-16', 'Nueva adquisición', 'Miguel Hidalgo Ortega'),
-(14, 114, 'Salida', 25, '2024-07-17', 'Salida para despacho interno', 'Gloria Ramírez Castro'),
-(15, 115, 'Ajuste', -12, '2024-07-18', 'Ajuste por deterioro', 'Carlos Montero Rodríguez'),
-(16, 116, 'Entrada', 55, '2024-07-19', 'Reingreso por devolución', 'Paula Quirós Vargas'),
-(17, 117, 'Salida', 35, '2024-07-20', 'Entrega a proyecto', 'Esteban Morales'),
-(18, 118, 'Ajuste', -7, '2024-07-21', 'Ajuste de inventario mensual', 'Sandra Pérez Mena'),
-(19, 119, 'Entrada', 90, '2024-07-22', 'Ingreso de productos nuevos', 'Marcos Ramírez Soto'),
-(20, 120, 'Salida', 40, '2024-07-23', 'Consumo mensual', 'Marta Arias Fernández'),
-(21, 121, 'Ajuste', -2, '2024-07-24', 'Corrección por error en registro', 'Ricardo Vargas Esquivel'),
-(22, 122, 'Entrada', 20, '2024-07-25', 'Entrega de proveedor', 'Isabel Cruz García'),
-(23, 123, 'Salida', 18, '2024-07-26', 'Solicitud específica', 'Mario Sánchez Vega'),
-(24, 124, 'Ajuste', -4, '2024-07-27', 'Pérdida registrada', 'Carolina Zamora Chaves'),
-(25, 125, 'Entrada', 12, '2024-07-28', 'Ingreso para nuevo pedido', 'Adriana Ortiz Leiva');
+INSERT INTO Movimientos_Inventario (ID_Movimiento, ID_Producto, Tipo_Movimiento, Cantidad, Fecha, Descripción, Responsable) VALUES  
+(1, 18, 'Entrada', 50, '2024-07-04', 'Ingreso de producto para reaprovisionamiento', 'Risvan Eduardo Vargas Esquivel'),
+(2, 5, 'Salida', 30, '2024-07-05', 'Entrega para solicitud 2024-2110', 'Maureen Manley Baeza'),
+(3, 11, 'Ajuste', -5, '2024-07-06', 'Ajuste por rotura', 'Jorge Campos Pérez'),
+(4, 1, 'Entrada', 100, '2024-07-07', 'Ingreso por nueva compra', 'Ana María González'),
+(5, 6, 'Salida', 20, '2024-07-08', 'Pedido interno', 'Carlos Jiménez Rodríguez'),
+(6, 8, 'Ajuste', -10, '2024-07-09', 'Ajuste por inventario físico', 'Laura Castillo Solano'),
+(7, 17, 'Entrada', 25, '2024-07-10', 'Reaprovisionamiento', 'José Antonio Salazar'),
+(8, 16, 'Salida', 15, '2024-07-11', 'Solicitud de materiales administrativos', 'María Fernanda Rojas'),
+(9, 10, 'Ajuste', -3, '2024-07-12', 'Producto defectuoso', 'Luis Fernando Rodríguez'),
+(10, 13, 'Entrada', 45, '2024-07-13', 'Ingreso adicional de producto', 'Daniela Salazar Ramírez'),
+(11, 9, 'Salida', 60, '2024-07-14', 'Solicitud aprobada de materiales', 'Andrés Villalobos Mora'),
+(12, 12, 'Ajuste', 8, '2024-07-15', 'Ajuste por ingreso extra', 'Rosa Elena Vargas'),
+(13, 3, 'Entrada', 75, '2024-07-16', 'Nueva adquisición', 'Miguel Hidalgo Ortega'),
+(14, 4, 'Salida', 25, '2024-07-17', 'Salida para despacho interno', 'Gloria Ramírez Castro'),
+(15, 15, 'Ajuste', -12, '2024-07-18', 'Ajuste por deterioro', 'Carlos Montero Rodríguez'),
+(16, 2, 'Entrada', 55, '2024-07-19', 'Reingreso por devolución', 'Paula Quirós Vargas'),
+(17, 14, 'Salida', 35, '2024-07-20', 'Entrega a proyecto', 'Esteban Morales'),
+(18, 7, 'Ajuste', -7, '2024-07-21', 'Ajuste de inventario mensual', 'Sandra Pérez Mena'),
+(19, 19, 'Entrada', 90, '2024-07-22', 'Ingreso de productos nuevos', 'Marcos Ramírez Soto'),
+(20, 20, 'Salida', 40, '2024-07-23', 'Consumo mensual', 'Marta Arias Fernández'),
+(21, 21, 'Ajuste', -2, '2024-07-24', 'Corrección por error en registro', 'Ricardo Vargas Esquivel'),
+(22, 22, 'Entrada', 20, '2024-07-25', 'Entrega de proveedor', 'Isabel Cruz García'),
+(23, 23, 'Salida', 18, '2024-07-26', 'Solicitud específica', 'Mario Sánchez Vega'),
+(24, 24, 'Ajuste', -4, '2024-07-27', 'Pérdida registrada', 'Carolina Zamora Chaves'), 
+(25, 5, 'Entrada', 12, '2024-07-28', 'Ingreso para nuevo pedido', 'Adriana Ortiz Leiva');
+
 
 --Muestra los datos de los movimientos del inventario
 select * from Movimientos_Inventario; 
