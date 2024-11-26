@@ -81,3 +81,28 @@ WHERE p.Costo_Unitario = (
     INNER JOIN Toma t2 ON p2.ID_Producto = t2.ID_Producto
     WHERE t2.ID_Almacen = t.ID_Almacen
 );
+
+--Historial de tomas realizadas por un almacén específico:
+SELECT t.ID_Toma, t.Fecha, t.Estado
+FROM Toma t
+WHERE t.ID_Almacen = 1
+ORDER BY t.Fecha DESC;
+
+--Productos con costo unitario entre 500 y 1000:
+SELECT ID_Producto, Nombre, Costo_Unitario
+FROM Productos
+WHERE Costo_Unitario BETWEEN 500 AND 1000;
+
+--Promedio de costos de productos por almacén:
+SELECT a.Nombre_Almacen, AVG(p.Costo_Unitario) AS Promedio_Costo
+FROM Almacenes a
+INNER JOIN Ubicacion u ON a.ID_Almacen = u.ID_Almacen
+INNER JOIN Productos p ON u.ID_Producto = p.ID_Producto
+GROUP BY a.Nombre_Almacen;
+
+--Total de costos acumulados por almacén:
+SELECT a.Nombre_Almacen, SUM(p.Costo_Unitario) AS Costo_Total
+FROM Toma t
+INNER JOIN Productos p ON t.ID_Producto = p.ID_Producto
+INNER JOIN Almacenes a ON t.ID_Almacen = a.ID_Almacen
+GROUP BY a.Nombre_Almacen;
